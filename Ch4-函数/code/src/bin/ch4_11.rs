@@ -2,8 +2,7 @@
 fn tail(s: &String) -> u8 {
     if !s.is_empty() {
         s.as_bytes()[s.len() - 1]
-    }
-    else {
+    } else {
         0
     }
 }

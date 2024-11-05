@@ -1,13 +1,4 @@
-const C: i32 = 1;
-
 fn main() {
-    let x = 1;
-    const X: i32 = C;
-
-    // const Y: i32 = x; // Not ok.
-    // const Z: i32; // Not ok.
-    // let C = 1; // Not ok.
-    // C = 1; // Not ok.
-
-    assert_eq!(C + X + x, 3);
+    // 创建一个包含不同类型元素的元组
+    let _mixed: (i32, f64) = (500, 6.4);
 }

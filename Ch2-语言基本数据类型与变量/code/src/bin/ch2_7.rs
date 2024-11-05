@@ -1,12 +1,4 @@
 fn main() {
-    let s = "Rust Programming Language.";
-    let c = s.get(0..4);
-    assert_eq!(c, Some("Rust"));
-
-    let c = s.get(0..100);
-    assert_eq!(c, None);
-
-    if c.is_some() {
-        println!("{}", c.unwrap());
-    }
+    // 声明一个长度为5，元素类型为i32的数组
+    let _numbers: [i32; 5] = [1, 2, 3, 4, 5];
 }

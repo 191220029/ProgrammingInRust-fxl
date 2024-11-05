@@ -1,10 +1,10 @@
-static S: i32 = 1;
-
 fn main() {
-    let x = 2;
-    static mut Y: i32 = S;
+    // 创建一个元组
+    let person = ("Alice", 30);
 
-    unsafe { Y = x };
+    // 使用模式匹配来解构元组
+    let (name, age) = person;
 
-    assert_eq!(S + unsafe { Y }, 3);
+    assert_eq!(name, "Alice");
+    assert_eq!(age, 30);
 }

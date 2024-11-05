@@ -8,7 +8,7 @@ fn main() {
     };
 
     assert_eq!(incr_move(x), 11);
-    assert_eq!(i, 10);  //i的值并未改变，说明捕获时发生了浅拷贝
+    assert_eq!(i, 10); //i的值并未改变，说明捕获时发生了浅拷贝
 
     incr_move(x); //可以重复调用
 }

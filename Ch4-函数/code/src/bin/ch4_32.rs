@@ -13,8 +13,5 @@ fn main() {
 
     let incr = incr_vec_i32(v);
 
-    assert_eq!(
-        incr(),
-        vec![2, 3, 4]
-    );
+    assert_eq!(incr(), vec![2, 3, 4]);
 }

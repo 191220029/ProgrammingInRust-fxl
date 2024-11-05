@@ -1,7 +1,7 @@
-use std::ffi::{c_int};
+use std::ffi::c_int;
 
 #[link(name = "sum_pos_int")]
-extern {
+extern "C" {
     fn sum_pos_int(x1: c_int, ...) -> c_int;
 }
 

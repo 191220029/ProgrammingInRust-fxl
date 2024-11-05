@@ -2,7 +2,7 @@
 
 use std::any::type_name;
 
-fn plus_one_i32 (param1: i32) -> i32 {
+fn plus_one_i32(param1: i32) -> i32 {
     return param1 + 1;
 }
 fn main() {

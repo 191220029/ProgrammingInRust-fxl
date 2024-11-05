@@ -1,11 +1,11 @@
 fn main() {
-    let _binary_literal = 0b1010;
-    let _octal_literal = 0o12;
-    let _decimal_literal = 10i32;
-    let _hex_literal = 0xA_i64;
-    let _float64_literal = 3.14;
-    let _float32_litera = 3.14f32;
-    let _bool_literal = true;
-    let _char_literal = 'c';
-    let _str_literal = "str";
+    // 创建一个元组
+    let person = ("Alice", 30);
+
+    // 访问元组的元素
+    let name = person.0;
+    let age = person.1;
+
+    assert_eq!(name, "Alice");
+    assert_eq!(age, 30);
 }

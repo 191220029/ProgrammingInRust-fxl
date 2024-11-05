@@ -51,19 +51,18 @@ fn get_boxed_authors(x: i32) -> Box<dyn Authors> {
     let paper = Paper {
         title: String::from("Paper Title"),
         authors: vec![String::from("a")],
-        doc_id: String::from("1")
+        doc_id: String::from("1"),
     };
 
     let book = Book {
         name: String::from("ProgrammingInRust"),
         authors: vec![String::from("b")],
-        publisher: String::from("c")
+        publisher: String::from("c"),
     };
 
     if x == 1 {
         return Box::new(paper);
-    }
-    else {
+    } else {
         return Box::new(book);
     };
 }

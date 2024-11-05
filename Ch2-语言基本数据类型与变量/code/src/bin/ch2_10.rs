@@ -1,22 +1,7 @@
 fn main() {
-    // In the classroom, your roommate sits beside you.
-    // When talking with your roommate, "marisa" refers to your roomate.
-    let marisa = "roommate";
+    let _numbers = [1, 2, 3, 4, 5];
+    // _numbers[0] = 10;  // 这会导致编译错误
 
-    {
-        assert_eq!(marisa, "roommate");
-        // When asking questions to the teacher, "marisa" refers to the
-        // teacher.
-
-        let marisa = "teacher";
-        assert_eq!(marisa, "teacher");
-    }
-
-    // After asking questions, you talk with your roomate, and "marisa"
-    // refers to your roommate.
-    assert_eq!(marisa, "roommate");
-
-    // When your roommate leaves, "marisa" refers to the teacher.
-    let marisa = "teacher";
-    assert_eq!(marisa, "teacher");
+    let mut numbers_mut = [1, 2, 3, 4, 5];
+    numbers_mut[0] = 10; // 修改数组的第一个元素
 }

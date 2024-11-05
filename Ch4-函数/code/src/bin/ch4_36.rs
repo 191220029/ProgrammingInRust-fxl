@@ -5,11 +5,7 @@ fn add_triple(a: i32, b: i32, c: i32) -> i32 {
 }
 
 fn curried_add_triple(a: i32) -> Box<dyn Fn(i32) -> Box<dyn Fn(i32) -> i32>> {
-    Box::new(move |b| -> Box<dyn Fn(i32) -> i32> {
-        Box::new(move |c| {
-            add_triple(a, b, c)
-        })
-    })
+    Box::new(move |b| -> Box<dyn Fn(i32) -> i32> { Box::new(move |c| add_triple(a, b, c)) })
 }
 
 fn main() {
@@ -52,5 +48,4 @@ fn main() {
     // Uncomment the next line to see that we have a cycle;
     // it will overflow the stack
     println!("a next item = {:?}", a.tail());
-    
 }

@@ -16,6 +16,6 @@ fn main() {
     let v = map_on_vec_i32(v, plus_one_i32);
     assert_eq!(v, vec![2, 3, 4]);
 
-    let v = map_on_vec_i32(v, |x| {x + 1});
+    let v = map_on_vec_i32(v, |x| x + 1);
     assert_eq!(v, vec![3, 4, 5]);
 }

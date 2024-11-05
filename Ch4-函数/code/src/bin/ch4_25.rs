@@ -6,8 +6,5 @@ fn main() {
     };
 
     insert_rust_str();
-    assert_eq!(
-        s, 
-        "Read ProgrammingInRust".to_string()
-    );
+    assert_eq!(s, "Read ProgrammingInRust".to_string());
 }

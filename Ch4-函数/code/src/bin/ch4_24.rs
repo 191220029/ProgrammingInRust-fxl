@@ -3,12 +3,12 @@ fn main() {
     let mut i = 10;
 
     let mut incr = |x| //--+
-        i += x;		 //  |
-//                       |	被捕获变量i的可变借用的非词法作用域
-    //error: cannot assign to i because it is borrowed
-    //i = 1;    		 |
-				//           |
-    incr(x);	//----------+
+        i += x; //  |
+                //                       |	被捕获变量i的可变借用的非词法作用域
+                //error: cannot assign to i because it is borrowed
+                //i = 1;    		 |
+                //           |
+    incr(x); //----------+
     assert_eq!(i, 11);
 
     i = 1; // ok

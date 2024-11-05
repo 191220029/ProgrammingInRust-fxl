@@ -1,7 +1,7 @@
 use std::ffi::c_int;
 
 #[link(name = "add_one")]
-extern {
+extern "C" {
     fn add_one(x: c_int) -> c_int;
 }
 

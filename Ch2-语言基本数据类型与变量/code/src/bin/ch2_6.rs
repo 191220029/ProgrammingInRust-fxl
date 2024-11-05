@@ -1,3 +1,3 @@
 fn main() {
-    let _never = panic!("Master Spark~~~");
+    let _never = panic!("Never returns.");
 }

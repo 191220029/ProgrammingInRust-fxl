@@ -1,9 +1,8 @@
 fn main() {
-    // The value of mutable variables can be changed.
-    let mut _x = 1;
-    _x = 2; // ok
+    // 直接列出所有元素定义数组
+    let _days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
-    // The value of immutable variables cannot be changed.
-    let _y = _x;
-    // _y = _x; // not ok
+    // 使用单一值定义数组
+    let zeroes = [0; 10]; // 一个包含10个0的数组
+    assert_eq!(zeroes, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
 }
