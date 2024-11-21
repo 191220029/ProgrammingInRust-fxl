@@ -6,4 +6,8 @@ fn main() {
     // The value of immutable variables cannot be changed.
     let _y = _x;
     // _y = _x; // not ok
+
+    // Multiple binding of variables.
+    let _x = 1.;
+    let _y = _x;
 }
